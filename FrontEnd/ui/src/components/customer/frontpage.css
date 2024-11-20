@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Dark text color for better readability */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+/* Section styling */
+.section {
+    text-align: center;
+    color: white;
+    padding: 50px 0; /* Added padding for better spacing */
+}
+
+/* Image within section */
+.section img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Limit image height for better control */
+    object-fit: cover; /* Cover the area while preserving aspect ratio */
+}
+
+/* About Us section */
+.about-us {
+    position: relative;
+    background: url('your-background-image.jpg') no-repeat center center/cover; /* Add background image if needed */
+    padding: 100px 0; /* Padding for better spacing */
+}
+
+.about-us h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    color: white; /* Ensure text is readable against the background */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add shadow for better readability */
+    margin: 0;
+}
+
+/* Promotion section */
+.promotion {
+    background-color: white;
+    color: black;
+    padding: 50px 0;
+    border-top: 1px solid #ddd; /* Subtle border for separation */
+}
+
+.promotion h2 {
+    font-size: 1.2em;
+    color: #FF6347;
+    margin: 0;
+}
+
+.promotion h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    font-weight: 700; /* Bold for emphasis */
+}
+
+.promotion .button {
+    background-color: #FF6347;
+    color: white;
+    padding: 15px 30px; /* Larger button for better clickability */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-transform: uppercase; /* Uppercase text for button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+.promotion .button:hover {
+    background-color: #e5533e; /* Slightly darker color on hover */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}
+
+.promotion .image-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.promotion .image-container img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow for better visual depth */
+}
+
+.promotion .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px dashed #FF6347; /* Increased border width for more emphasis */
+    border-radius: 50%;
+    margin: -10px;
+}
+
+/* Sri Lanka section */
+.sri-lanka {
+    position: relative;
+    background: url('your-background-image.jpg') no-repeat center center/cover; /* Add background image if needed */
+    padding: 100px 0; /* Padding for better spacing */
+}
+
+.sri-lanka h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    color: white; /* Ensure text is readable against the background */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add shadow for better readability */
+    margin: 0;
+}

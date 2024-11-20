@@ -1,0 +1,68 @@
+/* Navbar container styling */
+.navbar {
+    background-color: #0077cc; /* Travel-themed blue background */
+    padding: 1.8em 2em; /* Add padding for better spacing */
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: center; /* Center the entire content horizontally */
+    align-items: center; /* Vertically center items */
+    position: relative; /* Use position relative to center items */
+  }
+  
+/* Center logo with absolute positioning */
+.navbar .logo {
+    position: absolute;
+    left: 0;
+}
+
+.navbar .logo a {
+    color: #fff; /* White color for the logo text */
+    font-size: 1.8em; /* Larger font size for logo */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font for emphasis */
+    letter-spacing: 2px; /* Spacing between letters */
+}
+
+/* Navbar links styling */
+.navbar ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Inline list items */
+}
+
+.navbar li {
+    margin-right: 20px; /* Space between items */
+}
+
+.navbar a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1em; /* Slightly larger text for readability */
+    font-weight: 500; /* Medium font weight for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Gold color for hover effect */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center align text */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    .navbar li {
+        margin: 10px 0; /* Space between items in column layout */
+    }
+
+    .navbar .logo {
+        position: static;
+        margin-bottom: 10px; /* Logo on top in column layout */
+    }
+}

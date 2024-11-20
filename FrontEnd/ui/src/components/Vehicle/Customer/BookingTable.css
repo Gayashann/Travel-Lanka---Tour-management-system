@@ -1,0 +1,135 @@
+/* Style for the table container */
+.table-container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+
+  animation: fadeIn 0.8s ease-in-out; /* Fade-in animation */
+}
+
+/* Style for table headers */
+th {
+  background-color: #4caf50; /* Green background for headers */
+  color: white; /* White text color for contrast */
+  font-weight: bold; /* Bold font for emphasis */
+  padding: 12px 16px; /* Added padding for better spacing */
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px solid #388e3c; /* Slightly darker bottom border */
+}
+
+/* Table rows */
+.table-row {
+  transition: background-color 0.3s ease-in-out, transform 0.3s; /* Smooth transition effects */
+}
+
+/* Hover effect for table rows */
+.table-row:hover {
+  background-color: #dff0d8; /* Light green background on hover */
+  transform: scale(1.02); /* Slight scale effect for interactivity */
+}
+
+/* Table cells */
+td {
+  padding: 10px 16px; /* Added horizontal padding for better spacing */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Light grey bottom border */
+}
+
+/* Style for buttons */
+.MuiButton-containedPrimary {
+  background-color: #2196f3 !important; /* Primary button background color */
+  color: white !important; /* White text color */
+  transition: background-color 0.3s ease-in-out, transform 0.2s; /* Smooth transitions */
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 8px 16px; /* Padding for buttons */
+}
+
+/* Hover effect for primary buttons */
+.MuiButton-containedPrimary:hover {
+  background-color: #0b7dda !important; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Style for secondary buttons */
+.MuiButton-containedSecondary {
+  background-color: #f44336 !important; /* Secondary button background color */
+  color: white !important; /* White text color */
+  transition: background-color 0.3s ease-in-out, transform 0.2s; /* Smooth transitions */
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 8px 16px; /* Padding for buttons */
+}
+
+/* Hover effect for secondary buttons */
+.MuiButton-containedSecondary:hover {
+  background-color: #d32f2f !important; /* Darker red on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Start invisible */
+      transform: translateY(-20px); /* Move up */
+  }
+  100% {
+      opacity: 1; /* End fully visible */
+      transform: translateY(0); /* Move to original position */
+  }
+}
+
+/* For the dialog box */
+.MuiDialog-paper {
+  animation: fadeInDialog 0.6s ease-in-out; /* Fade-in effect for dialog */
+}
+
+/* Animation for dialog box */
+@keyframes fadeInDialog {
+  0% {
+      opacity: 0; /* Start invisible */
+      transform: scale(0.8); /* Start smaller */
+  }
+  100% {
+      opacity: 1; /* End fully visible */
+      transform: scale(1); /* Return to normal size */
+  }
+}
+/* BookingTable.css */
+.table-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.table-row {
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.table-row:hover {
+  background-color: #e3f2fd; /* Light blue on hover */
+}
+
+.table-cell {
+  padding: 16px; /* More padding for comfortable spacing */
+}
+
+.submit-button {
+  background-color: #4caf50; /* Green background for submit button */
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+  &:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+}
+
+/* Dialog Styles */
+.dialog-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.dialog-content {
+  padding: 20px;
+}

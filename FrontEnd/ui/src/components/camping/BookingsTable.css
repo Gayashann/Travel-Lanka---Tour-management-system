@@ -1,0 +1,87 @@
+/* General table styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 20px 0; /* Margin around the table */
+    font-size: 16px; /* Font size for table text */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+    border: 2px solid #000; /* Dark border around the table */
+}
+
+/* Table header styling */
+thead {
+    background-color: #0056b3; /* Dark blue background for header */
+    color: white; /* White text color */
+}
+
+th {
+    padding: 15px; /* Increased padding for header cells */
+    text-align: left; /* Left-align text */
+    border: 2px solid #000; /* Dark solid border for header cells */
+    font-size: 18px; /* Larger font size for headers */
+}
+
+/* Table body styling */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+
+tbody tr:hover {
+    background-color: #cce5ff; /* Light blue highlight on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+td {
+    padding: 15px; /* Increased padding for data cells */
+    border: 2px solid #000; /* Dark solid border for data cells */
+    font-size: 16px; /* Consistent font size for data */
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px; /* Increased padding inside buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+    margin: 5px; /* Space between buttons */
+    color: #fff; /* White text for all buttons */
+}
+
+/* Edit button styling */
+button.edit-button {
+    background-color: #4caf50; /* Green color for edit button */
+    color: white; /* White text */
+}
+
+button.edit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+/* Delete button styling */
+button.delete-button {
+    background-color: #f44336; /* Red color for delete button */
+    color: white; /* White text */
+}
+
+button.delete-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+/* Save button styling for when editing */
+button.save-button {
+    background-color: #2196f3; /* Blue color for save button */
+    color: white; /* White text */
+}
+
+button.save-button:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight grow on hover */
+}

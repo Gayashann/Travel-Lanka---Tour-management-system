@@ -1,0 +1,111 @@
+body {
+  background-color: #e8f5ff; /* Light sky blue background */
+  background-image: url('https://wallpaperaccess.com/full/1307284.jpg'); /* Add your background image here */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  font-family: 'Arial', sans-serif;
+}
+
+.package-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Limit width for larger screens */
+}
+
+.package-card {
+  position: relative; /* Enable positioning context for child elements */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%; /* Ensure the card takes up full height */
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.package-card h2 {
+  font-size: 1.6em;
+  color: #2c3e50; /* Darker blue for headings */
+  margin: 10px 0;
+}
+
+.card-price {
+  font-size: 1.4em;
+  color: #e67e22; /* Orange color for prices */
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card-location {
+  font-style: italic;
+  color: #7f8c8d; /* Light gray for location */
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.4em;
+  color: #2980b9; /* Bright blue for the main title */
+}
+
+.book-button {
+  position: absolute; /* Position relative to the package-card */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: #28a745; /* Green color for the button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1em; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.book-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Optional: Add a footer style for overall aesthetics */
+.footer {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}

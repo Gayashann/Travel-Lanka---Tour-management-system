@@ -1,0 +1,83 @@
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #28a745; /* Green */
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green for hover effect */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red */
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker red for hover effect */
+}
+
+
+.card-custom {
+  width: 400px;  
+  background-image: url('./images/back2.jpg');
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 15px;
+  margin: 10px auto;  
+  padding: 20px; /* Optional: for spacing inside the card */
+}
+
+/* Make all text inside the card bold */
+.card-custom * {
+  font-weight: bold;
+  color: white; /* Ensures text is white */
+}
+
+/* Optional: Adjust specific text elements (like headers) */
+.card-custom h2, 
+.card-custom h3, 
+.card-custom p {
+  margin-bottom: 10px;
+}
+
+.card-custom .username {
+  font-weight: bold;
+  color: white !important;  
+}
+
+.card-title {
+  color: white;      
+  font-weight: bold;  
+  font-size: 1.25rem;  
+  margin-bottom: 8px;  
+}
+
+
+  .star {
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .on .star {
+    color: gold;
+  }
+  
+  .off .star {
+    color: gray;
+  }
+  
+  

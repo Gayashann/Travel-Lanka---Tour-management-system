@@ -1,0 +1,18 @@
+//backend api 
+cd api
+npm i
+npm start
+
+//backend 
+cd BackEnd
+npm i
+npm start
+
+//run front end 
+cd FrontEnd/ui
+npm i
+npm run dev
+
+cd FrontEnd/web
+npm i 
+npm start

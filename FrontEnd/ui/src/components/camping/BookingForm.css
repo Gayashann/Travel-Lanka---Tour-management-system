@@ -1,0 +1,58 @@
+/* src/BookingForm.css */
+
+.BookingForm {
+  padding: 30px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 500px; /* Increased max-width */
+  margin: 20px auto; /* Center form with margin */
+}
+
+.BookingForm h2 {
+  text-align: center; /* Center heading */
+  margin-bottom: 20px; /* Space below heading */
+  color: #333; /* Dark color for better readability */
+}
+
+.BookingForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.BookingForm input {
+  margin: 10px 0;
+  padding: 15px; /* Increased padding for comfort */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Larger font size */
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.BookingForm input:focus {
+  border-color: #28a745; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Soft glow effect */
+}
+
+.BookingForm button {
+  padding: 15px; /* Increased padding */
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.BookingForm button:hover {
+  background-color: #218838;
+}
+
+.BookingForm .error-message {
+  color: #dc3545; /* Red color for error messages */
+  margin-top: -8px; /* Slightly move up */
+  margin-bottom: 10px; /* Space below error message */
+  font-size: 14px; /* Font size for error messages */
+}

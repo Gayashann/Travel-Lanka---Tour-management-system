@@ -1,0 +1,231 @@
+/* Image Styles */
+.vehicle-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  transition: transform 0.5s ease, opacity 0.4s ease;
+}
+
+.vehicle-card:hover .vehicle-image {
+  transform: scale(1.1);
+  opacity: 0.95;
+}
+
+/* Typography Styles */
+.vehicle-brand {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem; /* Size of brand name */
+  text-transform: uppercase; /* Uppercase for brand name */
+  letter-spacing: 1px; /* Space between letters */
+  color: #004d00; /* Dark green color */
+  margin: 10px 0; /* Margin above and below */
+  text-align: center; /* Centered text */
+  background-color: #9ff5f0; /* Light background for contrast */
+  padding: 5px; /* Padding for space around text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+/* Vehicle Name Styles */
+.vehicle-name {
+  font-size: 2rem; /* Size of vehicle name */
+  font-weight: bold; /* Bold for emphasis */
+  color: #004d00; /* Dark green color */
+  margin-top: 10px; /* Margin above */
+  transition: color 0.3s ease, transform 0.3s ease; /* Transition effects */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.vehicle-card:hover .vehicle-name {
+  color: #00e676;
+}
+
+/* Vehicle Details Styles */
+.vehicle-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f8e9;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-detail-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehicle-detail-item:hover {
+  background-color: #dcedc8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Detail Icons */
+.detail-icon {
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.vehicle-detail-item:hover .detail-icon {
+  color: #2e7d32;
+}
+
+.detail-icon.fuel {
+  color: #ff7043;
+}
+
+.detail-icon.capacity {
+  color: #42a5f5;
+}
+
+.detail-icon.lkr {
+  color: #ffb74d;
+}
+
+.detail-icon.car {
+  color: #66bb6a;
+}
+
+/* Booking Button Styles */
+.booking-button {
+  background: linear-gradient(135deg, #00c853, #76ff03);
+  color: white;
+  padding: 12px 18px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+
+.booking-button:hover {
+  background: linear-gradient(135deg, #00e676, #76ff03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+
+
+.booking-button:hover span {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Modal Styles */
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 800px;
+  background: linear-gradient();
+  border-radius: 15px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.25);
+  padding: 35px;
+  animation: fadeIn 0.5s ease;
+  background: linear-gradient(135deg, #c0d8e8, #0a7eaf);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.vehicle-modal-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  transition: transform 0.4s ease;
+}
+
+.vehicle-modal-image:hover {
+  transform: scale(1.05);
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color:linear-gradient(135deg, #e0f2fe, #38bdf8);
+}
+
+.vehicle-details-modal {
+  background-color:linear-gradient(135deg, #e0f2fe, #38bdf8);
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  width: 100%; /* Adjust width as needed */
+  max-width: 500px; /* Maximum width for larger screens */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.vehicle-modal-image {
+  width: 100%; /* Full width of the modal */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+h6 {
+  font-size: 1.25rem; /* Adjust heading size */
+  margin: 10px 0; /* Space above and below heading */
+  color: #333; /* Darker text color */
+}
+
+h8 {
+  font-size: 1rem; /* Adjust subheading size */
+  margin: 5px 0; /* Space above and below subheading */
+  color: #555; /* Medium text color */
+}
+
+.typography {
+  color: #777; /* Gray text color */
+  margin: 5px 0; /* Space between lines */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+.price {
+  font-weight: bold; /* Emphasize the price */
+  color: #f39c12; /* Color for the price */
+}
+
+.rental-terms {
+  font-style: italic; /* Italicize rental terms */
+}

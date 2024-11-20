@@ -1,0 +1,189 @@
+/* Bill.css */
+
+/* Container for the entire bill page */
+.bill-container {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  position: relative; /* Ensure the container is positioned */
+}
+
+/* Title for the bill */
+.bill-container h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Frame around the bill details */
+.bill-details {
+  padding: 15px; /* Reduced padding for a more compact look */
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Edit section styling */
+.edit-section {
+  margin-bottom: 20px; /* Space below edit section */
+}
+
+.edit-section h2 {
+  font-size: 20px; /* Smaller heading */
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Input fields styling for editing */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: calc(100% - 12px); /* Adjusted width for padding */
+  padding: 8px; /* Reduced padding */
+  margin: 6px 0; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Smaller font size */
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Label styling */
+label {
+  display: block; /* Ensure labels take full width */
+  margin-bottom: 4px; /* Space between label and input */
+  font-weight: bold;
+  font-size: 14px; /* Smaller font size for labels */
+}
+
+/* Frame around the bill details */
+.bill-details h2 {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.bill-details p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #666;
+}
+
+/* Total price styling */
+.bill-details h2:last-of-type {
+  font-size: 24px;
+  color: #333;
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Billing info styling */
+.billing-info {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #888;
+  text-align: right;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 14px; /* Smaller font size for buttons */
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+}
+
+/* Specific button styling */
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.pay-button {
+  background-color: #28a745;
+  position: absolute; /* Positioned within the container */
+  bottom: 65px; /* Adjust for spacing */
+  right: 20px; /* Align to the right bottom corner */
+}
+
+.pay-button:hover {
+  background-color: #218838;
+}
+
+/* Back button styling */
+.back-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+/* Edit button specific styling */
+.edit-button {
+  background-color: #1a10d8;
+  color: white;
+  margin-bottom: 10px; /* Space below the button */
+  display: inline-block; /* Ensure proper spacing */
+}
+
+.edit-button:hover {
+  background-color: #00a8e0;
+}
+
+/* Button container for alignments */
+.button-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .bill-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  button {
+    width: 100%; /* Make buttons full-width on small screens */
+    margin: 5px 0; /* Adjust margin for buttons */
+  }
+}

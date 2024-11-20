@@ -1,0 +1,78 @@
+/* src/Footer.css */
+
+footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 5px 0; /* Further reduced padding */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px; /* Reduced side padding */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px; /* Minimal gap between columns */
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  h3 {
+    font-size: 0.8rem; /* Even smaller font size */
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin: 3px 0; /* Further reduced margin for list items */
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75rem; /* Smaller link font size */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin: 3px 0; /* Further reduced margin for paragraphs */
+    font-size: 0.75rem; /* Smaller font size for paragraphs */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 10px; /* Reduced top margin */
+    padding-top: 3px; /* Further reduced padding */
+    border-top: 1px solid #333;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.65rem; /* Even smaller font size for footer bottom text */
+    color: #ccc;
+  }
+  /* src/Footer.css */
+
+footer {
+  background-color: #f1f1f1; /* Light gray background */
+  padding: 20px;
+  margin-top: 60px; /* Adjust this value to move the footer down further */
+  position: relative; /* Relative position to maintain flow */
+  bottom: 0;
+  width: 100%; /* Ensure it spans the full width */
+  text-align: center; /* Center the text */
+}

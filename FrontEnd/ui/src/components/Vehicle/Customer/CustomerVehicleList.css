@@ -1,0 +1,336 @@
+/* Container for both images */
+.images-container {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Adjust height as needed */
+  overflow: hidden;
+  margin-top: 80px; /* Space below the title */
+  margin-bottom: 20px; /* Space between the images and vehicle cards */
+  display: flex; /* Distribute space between items */
+  justify-content: space-between; /* Space between images */
+}
+
+/* Container for the new image sliding in from the left */
+.new-image-container {
+  position: relative;
+  width: 45%; /* Adjust width as needed */
+  height: 100%;
+  overflow: hidden;
+}
+
+.new-image {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen on the left */
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Cover the container */
+  animation: slideInLeft 4s ease-out forwards; /* Animation for sliding in from the left */
+
+}
+
+/* Container for the new image sliding in from the right */
+.new-image-right-container {
+  position: relative;
+  width: 45%; /* Adjust width as needed */
+  height: 100%;
+  overflow: hidden;
+}
+
+.new-image-right {
+  position: absolute;
+  top: 0;
+  right: -100%; /* Start off-screen on the right */
+  width: 100%; /* Full width of the container */
+  height: 500%; /* Full height of the container */
+  object-fit: cover; /* Cover the container */
+  animation: slideInRight 4s ease-out forwards; /* Animation for sliding in from the right */
+}
+
+/* Keyframes for slide-in animation from the left */
+@keyframes slideInLeft {
+  0% {
+    left: -100%; /* Start position off-screen further to the left */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    left: 0; /* End position at the left edge of the container */
+    opacity: 1; /* Fade to fully visible */
+  }
+}
+
+/* Keyframes for slide-in animation from the right */
+@keyframes slideInRight {
+  0% {
+    right: -100%; /* Start position off-screen further to the right */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    right: 0; /* End position at the right edge of the container */
+    opacity: 1; /* Fade to fully visible */
+  }
+}
+
+
+
+/* Container for vehicle cards */
+.vehicle-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(); /* Gradient background */
+}
+
+/* Individual vehicle card */
+.vehicle-card {
+  background-color: #c78787; /* White background for each card */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Hide overflow for rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  max-width: 280px; /* Maximum width for each card */
+  margin-top: 20px; /* Space between the card and the image */
+}
+
+/* Hover effect for vehicle card */
+.vehicle-card:hover {
+  transform: translateY(-10px); /* Lift up effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Image inside vehicle card */
+.vehicle-image {
+  width: 100%; /* Full width of card */
+  height: 180px; /* Fixed height */
+  object-fit: cover; /* Cover the container */
+  border-bottom: 1px solid #ddd; /* Divider between image and text */
+}
+
+/* Vehicle details in card */
+.vehicle-details {
+  padding: 15px; /* Padding for text inside cards */
+  text-align: center; /* Center the text */
+}
+
+/* Title for vehicle */
+.vehicle-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333; /* Darker color for contrast */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+/* Info for vehicle */
+.vehicle-info {
+  font-size: 0.9rem;
+  color: #777; /* Subtle gray for secondary text */
+}
+
+/* Booking button */
+
+
+/* Modal box styling */
+
+
+/* Modal box styling */
+
+
+/* Keyframe for modal fade-in */
+
+
+/* Keyframe for modal scale animation */
+
+
+/* Modal header styling */
+
+
+
+
+/* Form elements inside modal */
+
+
+
+
+
+
+/* Button styling inside modal */
+
+
+/* Modal button hover effect */
+
+
+/* Close button styling */
+
+
+
+/* Close button icon styling */
+
+/* Responsive styling for smaller screens */
+
+
+
+
+
+/* CustomerVehicleList.css */
+
+/* Existing styles... */
+
+.load-more-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.load-more-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3ee239;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background-color: #00b330;
+}
+
+
+
+
+/* Hotel Cards Container */
+
+
+/* Adjusting container for responsive design */
+
+
+
+
+/* Fade-out animation for the notification */
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    opacity: 0; /* Fully transparent */
+  }
+}
+
+/* Media query for notifications on smaller screens */
+@media (max-width: 768px) {
+  .notification {
+    width: 90%; /* Full width on small screens */
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+}
+  
+.images-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around; /* Adjust spacing between images */
+  align-items: center;
+  margin: 20px 0; /* Add some margin */
+}
+
+.new-image-container,
+.new-image-right-container {
+  position: relative; /* Set position relative for absolute children */
+}
+
+.new-image,
+.new-image-right {
+  width: 600px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(252, 250, 250, 0.5); /* Semi-transparent background */
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s; /* Fade in effect */
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.image-container:hover .new-image,
+.image-container:hover .new-image-right {
+  transform: scale(1.05); /* Slightly scale up image on hover */
+}
+
+.title {
+  font-size: 3.5rem; /* Large font size for visibility */
+  font-weight: bold; /* Bold font for emphasis */
+  text-align: center; /* Center align the text */
+  color: #fff; /* White text color */
+  background: linear-gradient(90deg, #00796b, #004d40); /* Teal gradient for a fresh look */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* More pronounced shadow for depth */
+  margin: 30px 0; /* Increased margin for better spacing */
+  padding: 10px 0; /* Padding for extra space around text */
+  border-radius: 5px; /* Rounded corners */
+  position: relative; /* For pseudo-element positioning */
+  overflow: hidden; /* To hide the pseudo-element */
+  animation: bounceIn 1s ease forwards; /* Bounce-in animation */
+}
+
+/* Keyframes for bounce-in animation */
+@keyframes bounceIn {
+  0% {
+    opacity: 0; /* Start transparent */
+    transform: scale(0.5); /* Start scaled down */
+  }
+  60% {
+    opacity: 1; /* End fully visible */
+    transform: scale(1.1); /* Slightly zoom in */
+  }
+  80% {
+    transform: scale(0.9); /* Slightly zoom out */
+  }
+  100% {
+    transform: scale(1); /* End at original size */
+  }
+}
+
+/* Optional: Add a hover effect with zoom */
+.title:hover {
+  transform: scale(1.1); /* Slightly increase size */
+  transition: transform 0.3s ease; /* Smooth transition */
+  color: #a5d6a7; /* Light green color on hover */
+}
+
+/* Add a subtle glow effect */
+.title::after {
+  content: '';
+  position: absolute; /* Position relative to .title */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1); /* Light overlay for effect */
+  border-radius: 5px; /* Match the title's border radius */
+  animation: glow 2s infinite; /* Infinite glow animation */
+  opacity: 0; /* Initially invisible */
+}
+
+/* Keyframes for glow effect */
+@keyframes glow {
+  0%, 100% {
+    opacity: 0; /* Fade out */
+  }
+  50% {
+    opacity: 1; /* Fade in */
+  }
+}
